@@ -1,0 +1,9 @@
+{
+  "profiles": {
+    "SG01G02_MockReviewsApi": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7199",
+      "launchBrowser": false
+    }
+  }
+}
