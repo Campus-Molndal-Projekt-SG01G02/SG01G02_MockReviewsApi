@@ -1,4 +1,3 @@
-// Models.cs
 using System;
 using System.Collections.Generic;
 
@@ -9,7 +8,6 @@ namespace SG01G02_MockReviewsApi.Models
         public required string Id { get; set; }
         public required int ProductId { get; set; }
         public required string CustomerName { get; set; }
-        public required string Title { get; set; }
         public required string Content { get; set; }
         public int Rating { get; set; }
         public DateTime CreatedAt { get; set; }

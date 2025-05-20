@@ -12,7 +12,6 @@ namespace SG01G02_MockReviewsApi
 
         private static readonly Random _random = new Random();
         private static readonly string[] _customerNames = { "John Doe", "Jane Smith", "Bob Johnson", "Alice Brown", "Charlie Davis" };
-        private static readonly string[] _reviewTitles = { "Great product!", "Highly recommended", "Exceeded expectations", "Not bad", "Could be better" };
         private static readonly string[] _reviewContents = {
             "I've been using this for weeks and it's fantastic.",
             "Exactly what I was looking for. High quality.",
@@ -92,7 +91,6 @@ namespace SG01G02_MockReviewsApi
                     Id = Guid.NewGuid().ToString(),
                     ProductId = productId,
                     CustomerName = _customerNames[_random.Next(_customerNames.Length)],
-                    Title = _reviewTitles[_random.Next(_reviewTitles.Length)],
                     Content = _reviewContents[_random.Next(_reviewContents.Length)],
                     Rating = rating,
                     CreatedAt = createdAt,
